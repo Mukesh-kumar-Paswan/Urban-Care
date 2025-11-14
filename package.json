@@ -1,0 +1,28 @@
+{
+  "name": "homebuddy",
+  "version": "1.0.0",
+  "description": "UrbanCare is your all-in-one home services app designed to make city living simpler and more comfortable. Whether you need a spotless kitchen, a repaired faucet, or a perfectly maintained garden, UrbanCare connects you with trusted professionals — quickly and reliably.",
+  "homepage": "https://github.com/Mukesh-kumar-Paswan/Urban-Care#readme",
+  "bugs": {
+    "url": "https://github.com/Mukesh-kumar-Paswan/Urban-Care/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mukesh-kumar-Paswan/Urban-Care.git"
+  },
+  "license": "ISC",
+  "author": "Team Care",
+  "type": "commonjs",
+  "main": " bathroom, kitchen) to repairs (carpentry, plumbing) and gardening, UrbanCare ensures that every corner of your home gets the care it deserves. With a clean design, easy booking, and verified experts, UrbanCare delivers convenience, quality, and trust right to your doorstep.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "install": "^0.13.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.19.3",
+    "npm": "^11.6.2"
+  }
+}
