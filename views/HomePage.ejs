@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/HomePage.css">
+    <link rel="stylesheet" href="css/HomePage.css">
     <title>HomeBuddy</title>
     <link rel="icon" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,65 +18,71 @@
             <div class="navbar">
                 
                 <div class="title">
-                    <div class="logo-img"><img src="/images/logo.png" alt="Logo"></div>
+                    <div class="logo-img"><img src="/images/logo.jpg" alt="Logo"></div>
                 </div>
 
                 <div class="pages">
                     <a>Services</a>
                     <a>Log in / Sign up</a>
-                    <a><button>Premium</button></a>
+                    <button class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                        </svg>
+                        Premium
+                    </button>
+
                 </div>
             </div>
 
             <div class="main">
 
-                <div class="heading">Trusted help <br> right when you need it</div>
+                <div class="heading"><span class="gradient">Trusted Help </span><span class="gradient">Right When You Need It</span></div>
 
-                <div class="search">
-                    
-                    <div class="searchbar">
-                        <input type="text" placeholder="What can we help you with at home today?" id="searchfield">
-                        <button>🔎</button>
-                    </div>  
-                        
-                </div>
+                <div class="searchbar">
+                    <input type="text" placeholder="What can we help you with at home today?" id="searchfield">
+                    <div class="magnifi"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+                </div>                  
 
                 <div class="search-icons">
                     
                     <div class="assembly service">
-                        <div class="servic-icon"></div>
+                        <div class="servic-icon"><i class="fa-solid fa-screwdriver-wrench fa-beat"></i></div>
                         <div class="service-name">Assembly</div>
                     </div>
                     
                     <div class="painting service">
-                        <div class="servic-icon"></div>
+                        <div class="servic-icon"><i class="fa-solid fa-paint-roller fa-beat"></i></div>
                         <div class="service-name">Painting</div>
                     </div>
                     
                     <div class="moving service">
-                        <div class="servic-icon"></div>
+                        <div class="servic-icon"><i class="fa-solid fa-truck-moving fa-beat"></i></div>
                         <div class="service-name">Moving</div>
                     </div>
                     
                     <div class="cleaning service">
-                        <div class="servic-icon"></div>
+                        <div class="servic-icon"><i class="fa-solid fa-broom fa-beat"></i></div>
                         <div class="service-name">Cleaning</div>
                     </div>
                     
                     <div class="trending service">
-                        <div class="servic-icon"></div>
+                        <div class="servic-icon"><i class="fa-solid fa-fire fa-beat"></i></div>
                         <div class="service-name">Trending</div>
                     </div>
 
                 </div>
 
-                <div id="AI"><span>✨</span></div>
+                <div class="ai-btn">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19 2a1 1 0 0 1 .9.56l.35 1.03l1.03.35a1 1 0 0 1 0 1.89l-1.03.35l-.35 1.03a1 1 0 0 1-1.89 0l-.35-1.03l-1.03-.35a1 1 0 0 1 0-1.89l1.03-.35l.35-1.03A1 1 0 0 1 19 2" />
+                        <path fill="currentColor"
+                            d="M11 6.1l-.8 2.36a6 6 0 0 1-3.49 3.65l-2.36.8l2.36.8a6 6 0 0 1 3.65 3.49l.8 2.36l.8-2.36a6 6 0 0 1 3.49-3.65l2.36-.8l-2.36-.8a6 6 0 0 1-3.65-3.49z"/>
+                    </svg>
+                </div>
 
             </div>
 
-            
-
-            </div>
         </header>
 
         <section>

@@ -1,7 +1,13 @@
 /* * {
-  outline: 1px solid red;  //important remember it (use for checking elements space taken)
+    outline: 1px solid red; 
+    important remember it (use for checking elements space taken)
+} */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
- */
 
 body {
     margin: 0;
@@ -29,7 +35,6 @@ body {
 .title {
     height: 100%;
     width: 50vw;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +54,55 @@ body {
     width: 50vw;
     font-weight: 500;
     font-size: 1.2rem;
-    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
+
+.button {
+  width: fit-content;
+  display: flex;
+  padding: 0.8em 1.1em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.45);
+    background: linear-gradient(
+    20deg,
+    #6b00ff,
+    #9a00ff,
+    #ff009d,
+    #ff4f6d,
+    #ff8a3d,
+    #ff4f6d,
+    #ff009d,
+    #9a00ff,
+    #6b00ff
+    ) no-repeat;
+    background-size: 350%;
+    background-position: left center;
+    transition: background 0.35s ease;
+    color: #fff;
+}
+
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+.button:hover svg {
+  fill: #fff;
+}
+
+.button svg {
+  width: 23px;
+  fill: #f09f33;
+  transition: 0.3s ease;
+}
+
 
 /* NAVBAR */
 
@@ -71,16 +119,97 @@ body {
 /* HEADING */
 
 .heading {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0 5rem 0;
+    font-weight: 600;
+}
 
+.gradient {
+    background: linear-gradient(to right ,  #6b00ff,#9a00ff,#ff009d,#ff4f6d,#ff8a3d,#ff4f6d,#ff009d,#9a00ff,#6b00ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+/* SEARCH BAR */
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 8rem 0; 
+    gap: 0;
+}
+
+#searchfield {
+    outline: none;
+    height: 5rem;
+    width: 50rem;
+    font-size: 2rem;
+    border-radius: 150px 0 0 150px;
+    text-align: center;
+    border: 1px solid rgb(229, 46, 235);
+}
+
+.magnifi {
+    height: 5.3rem;
+    width: 5rem;
+    background: rgba(201, 9, 218, 0.267);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0 150px 150px 0;
+    border: 1px solid rgb(229, 46, 235);
+}
+
+.magnifi button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.magnifi i {
+    font-size: 28px; 
+    color: #ffffff; 
 }
 
 
+/* Types of Services */
 .search-icons {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
+    margin: 0 0 5rem 0;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: #ff009d;
+}
+
+.servic-icon {
+    font-size: 2rem;
 }
 
 
@@ -88,18 +217,35 @@ body {
 
 /* AI */
 
-#AI {
-    height: 3rem;
-    width: 3rem;
-    font-size: 2.1rem;
-    border-radius: 50%;
-    position: fixed;
-    left: 95%;
-    top: 90%;
+.ai-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e60b0beb;
+
+    position: fixed;
+    top: 85%;
+    left: 93%;
+
+    width: 60px;
+    height: 60px;
+
+    background: linear-gradient(135deg, #ff7ce5, #6f9bff);
+    border-radius: 50%;
+    color: #fff;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 0 12px #6f9bff80;
+}
+
+.ai-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ba5ebacc;
+}
+
+.ai-btn svg {
+    width: 40px;
+    height: 40px;
 }
 
 /* AI */
