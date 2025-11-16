@@ -265,7 +265,9 @@ body {
 .organise {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10rem;
+    /* gap: 8rem; */
+    row-gap: 6rem;
+    column-gap: 10rem;
 }
 
 .card {
@@ -299,5 +301,146 @@ body {
 
 /* SERVICES OF EACH TYPE */
 
+/* REVIEWS */
 
+#comments {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 6rem 0;
+}
+
+.cus-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0 0 5rem 0;
+}
+
+#review-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+}
+
+.customer {
+    height: 250px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.i-cus {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cus-img img {
+    height: 163px;
+    width: 240px;
+    padding: 1px 0 0 0;
+    object-fit: cover;  
+    border-radius: 10px;
+    
+}
+
+.cus-name {
+    padding: 0.5rem 0 0 0;
+    text-align: center;
+}
+
+/* REVIEWS */
+
+/* FOOTER */
+
+footer {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #D9DDDC;
+}
+
+.logo img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.email input {
+    width: 100%;               
+    padding: 1.2rem 1.5rem;    
+    font-size: 1.2rem;         
+    border: 1px solid #ccc;    
+    border-radius: 150px;      
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+.description input {
+    width: 100%;               
+    padding: 1.2rem 1.5rem;    
+    font-size: 1.2rem;         
+    border: 1px solid #ccc;    
+    border-radius: 150px;      
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    padding: 1.2rem 2.5rem;     
+    font-size: 1.3rem;         
+    font-weight: 600;
+    border-radius: 150px;        
+    border: none;
+    background: linear-gradient(135deg, #6f9bff, #b06bff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    opacity: 0.95;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+
+/* FOOTER */
 
