@@ -1,7 +1,107 @@
+/* * {
+  outline: 1px solid red;  //important remember it (use for checking elements space taken)
+}
+ */
+
 body {
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    /* overflow-x: hidden;  (remmber it)  */
+    font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-    color: aqua;
+/* NAVBAR */
+
+.navbar {
+    height: 8vh;
+    width: 99.90%;
+    border: 1px solid #D9DDDC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
+
+/* NAV 1 */
+
+.title {
+    height: 100%;
+    width: 50vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title img {
+    height: 3rem;
+    width: 10rem;
+    position: relative;
+    right: 3rem;
+}
+
+/* NAV 2 */
+
+.pages {
+    height: 100%;
+    width: 50vw;
+    font-weight: 500;
+    font-size: 1.2rem;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* NAVBAR */
+
+/* MAIN */
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADING */
+
+.heading {
+
+}
+
+
+.search-icons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+
+/* MAIN */
+
+/* AI */
+
+#AI {
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.1rem;
+    border-radius: 50%;
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e60b0beb;
+}
+
+/* AI */
+
+
