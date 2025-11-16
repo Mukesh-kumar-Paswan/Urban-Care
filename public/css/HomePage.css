@@ -251,3 +251,53 @@ body {
 /* AI */
 
 
+/* SERVICES OF EACH TYPE */
+
+.projects {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 10rem 0;
+}
+
+.organise {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10rem;
+}
+
+.card {
+    height: 250px;
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #e7a0ed;
+}
+
+.helps-i img {
+    height: 163px;
+    width: 240px;
+    padding: 1px 0 0 0;
+    object-fit: cover;  
+    border-radius: 10px;
+}
+
+.helps-q {
+    padding: 1rem 0 0 0;
+    text-align: center;
+    text-align-last: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* SERVICES OF EACH TYPE */
+
+
+
