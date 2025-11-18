@@ -14,10 +14,18 @@ app.listen(port , ()=> {
     console.log("Serve is listening at port" , port);
 })
 
-// Home page
+// Login Page
 
 app.get("/" , (req , res) => {
-    res.render("HomePage.ejs");
+    res.render("LoginPage.ejs");
 });
 
-// Home page
+// Login Page
+
+// Home Page
+
+app.get("/home" , (req , res) => {
+    res.render("HomePage.ejs");
+} )
+
+// Home Page
