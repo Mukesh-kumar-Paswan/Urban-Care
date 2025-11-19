@@ -24,8 +24,59 @@ app.get("/" , (req , res) => {
 
 // Home Page
 
-app.get("/home" , (req , res) => {
+app.get("/service" , (req , res) => {
     res.render("HomePage.ejs");
 } )
 
 // Home Page
+
+// Booking Page
+
+app.get("/booking" , (req , res) => {
+    res.render("BookingPage.ejs");
+})
+
+// Booking Page
+
+// Technician Page 
+
+app.get("/technicians" , (req , res) => {
+    res.render("TechniciansPage.ejs");
+})
+
+// Technician Page 
+
+// Work Info Page 
+
+app.get("/workinfo" , (req , res) => {
+    res.render("WorkinfoPage.ejs");
+})
+
+// Work Info Page 
+
+// Payment Page 
+
+app.get("/payment" , (req , res) => {
+    res.render("PaymentPage.ejs");
+})
+
+// Payment Page 
+
+// Review Page 
+
+app.get("/review" , (req , res) => {
+    res.render("ReviewPage.ejs");
+})
+
+// Review Page 
+
+// Unwanterd page
+
+app.use((req, res) => {
+    res.status(404).render("UnavailablePage.ejs");
+});
+
+
+// Unwanterd page
+
+
