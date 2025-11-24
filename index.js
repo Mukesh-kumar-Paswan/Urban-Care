@@ -12,6 +12,7 @@ app.use(methodOverride("_method"));
 
 app.listen(port, () => {
   console.log("Serve is listening at port", port);
+  console.log(`http://localhost:{port}/`);
 });
 
 // Login Page
