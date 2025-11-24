@@ -204,3 +204,25 @@
       box-shadow: none;
 
     }
+
+  .notification {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7494ec;
+    padding: 10px 16px;
+    border-radius: 150px;
+    color: white;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hide {
+  display: none;
+}
+/* 
+.from-box.register {
+  position: relative;
+} */

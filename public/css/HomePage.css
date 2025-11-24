@@ -1,7 +1,8 @@
-/* * {
-    outline: 1px solid red; 
-    important remember it (use for checking elements space taken)
-} */
+* {
+    /* outline: 1px solid red;  */
+    /* important remember it (use for checking elements space taken) */
+    scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
   width: 0;
@@ -58,6 +59,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #000;
 }
 
 .button {

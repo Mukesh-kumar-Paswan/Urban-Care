@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>UrbanCare || Login Page</title>
-
-  <link rel="icon" type="image/png" href="/images/favicon3.png" />
-  <link rel="stylesheet" href="/css/LoginPage.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UrbanCare || Login Page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://toppng.com/uploads/preview/maintenance-service-11549817054h6szmandqm.png"
+    />
+    <link rel="stylesheet" href="/css/LoginPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
   <body>
     <div class="container">
-    <!-- Login Form -->
-    <div class="from-box login">
-      <form action="#">
-        <h1>Login</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Username" required>
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="input-box">
-          <input type="password" placeholder="Password" required>
-          <i class="fa-solid fa-lock"></i>
-        </div>
-        <div class="forgot-link">
+      <!-- Login Form -->
+      <div class="from-box login">
+        <form action="#">
+          <div class="notification hide" id="signinmessage"></div>
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" id="semail" placeholder="Email" required />
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              id="spassword"
+              placeholder="Password"
+              required
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <!-- <div class="forgot-link">
           <a href="#">Forget Password</a>
-        </div>
-        <button type="submit" class="btn">Login</button>
-        <p>Or login with the social media platform</p>
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-google"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </form>
-    </div>
+        </div> -->
+          <button type="submit" id="submitsignin" class="btn">Login</button>
+          <p>Or login with the social media platform</p>
+          <div class="social-icons">
+            <!-- <a href="#"><i class="fa-brands fa-google"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-github"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+          </div>
+        </form>
+      </div>
 
-    <!-- Registration Form -->
-    <div class="from-box register">
-      <form action="#">
-        <h1>Registration</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Username" required>
-          <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="input-box">
-          <input type="email" placeholder="Email" required>
-          <i class="fa-regular fa-envelope"></i>
-        </div>
-        <div class="input-box">
-          <input type="password" placeholder="Password" required>
-          <i class="fa-solid fa-lock"></i>
-        </div>
-        <button type="submit" class="btn">Register</button>
-        <p>Or Register with the social media platform</p>
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-google"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-      </form>
-    </div>
+      <!-- Registration Form -->
+      <div class="from-box register">
+        <form action="#">
+          <div class="notification hide" id="signupmessage"></div>
+          <h1>Registration</h1>
+          <div class="input-box">
+            <input type="text" id="rusername" placeholder="Username" required />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" id="remail" placeholder="Email" required />
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              id="rpassword"
+              placeholder="Password"
+              required
+            />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <button type="submit" id="submitsignup" class="btn">Register</button>
+          <p>Or Register with the social media platform</p>
+          <div class="social-icons">
+            <!-- <a href="#"><i class="fa-brands fa-google"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-github"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-linkedin"></i></a> -->
+          </div>
+        </form>
+      </div>
 
       <!-- Toggle Box -->
       <div class="toggle-box">
-
         <!-- Toggle Left -->
         <div class="toggle-panel toggle-left">
           <h1>Hello, Welcome</h1>
@@ -80,10 +96,10 @@
         <div class="toggle-panel toggle-right">
           <h1>Welcome Back!</h1>
           <p>Already have an account?</p>
-          <button class="btn login-btn">Login</button>
+          <button class="btn login-btn" id="signUp">Login</button>
         </div>
       </div>
     </div>
   </body>
-  <script src="/js/LoginPage.js"></script>
+  <script type="module" src="/js/LoginPage.js"></script>
 </html>

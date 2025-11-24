@@ -4,79 +4,84 @@ const port = 8080;
 const path = require("path");
 const methodOverride = require("method-override");
 
-app.set("views" , path.join(__dirname , "views"));
-app.set("view engine" , "ejs");
-app.use(express.static(path.join(__dirname , "public/")));
-app.use(express.urlencoded({extended : true}));
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "public/")));
+app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
-app.listen(port , ()=> {
-    console.log("Serve is listening at port" , port);
-})
+app.listen(port, () => {
+  console.log("Serve is listening at port", port);
+});
 
 // Login Page
 
-app.get("/" , (req , res) => {
-    res.render("LoginPage.ejs");
+app.get("/", (req, res) => {
+  res.render("LoginPage.ejs");
 });
 
 // Login Page
 
 // Home Page
 
-app.get("/service" , (req , res) => {
-    res.render("HomePage.ejs");
-} )
+app.get("/service", (req, res) => {
+  res.render("HomePage.ejs");
+});
 
 // Home Page
 
 // Booking Page
 
-app.get("/booking" , (req , res) => {
-    res.render("BookingPage.ejs");
-})
+app.get("/booking", (req, res) => {
+  res.render("BookingPage.ejs");
+});
 
 // Booking Page
 
-// Technician Page 
+// Technician Page
 
-app.get("/technicians" , (req , res) => {
-    res.render("TechniciansPage.ejs");
-})
+app.get("/technicians", (req, res) => {
+  res.render("TechniciansPage.ejs");
+});
 
-// Technician Page 
+// Technician Page
 
-// Work Info Page 
+// Work Info Page
 
-app.get("/workinfo" , (req , res) => {
-    res.render("WorkinfoPage.ejs");
-})
+app.get("/workinfo", (req, res) => {
+  res.render("WorkinfoPage.ejs");
+});
 
-// Work Info Page 
+// Work Info Page
 
-// Payment Page 
+// Payment Page
 
-app.get("/payment" , (req , res) => {
-    res.render("PaymentPage.ejs");
-})
+app.get("/payment", (req, res) => {
+  res.render("PaymentPage.ejs");
+});
 
-// Payment Page 
+// Payment Page
 
-// Review Page 
+// Chats Page
 
-app.get("/review" , (req , res) => {
-    res.render("ReviewPage.ejs");
-})
+app.get("/chats", (req, res) => {
+  res.render("ChatsPage.ejs");
+});
 
-// Review Page 
+// Chats Page
+
+// Review Page
+
+app.get("/review", (req, res) => {
+  res.render("ReviewPage.ejs");
+});
+
+// Review Page
 
 // Unwanterd page
 
 app.use((req, res) => {
-    res.status(404).render("UnavailablePage.ejs");
+  res.status(404).render("UnavailablePage.ejs");
 });
 
-
 // Unwanterd page
-
-

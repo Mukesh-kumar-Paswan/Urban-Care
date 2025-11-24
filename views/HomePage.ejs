@@ -1,340 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/HomePage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/HomePage.css" />
     <title>HomeBuddy</title>
-    <link rel="icon" type="image/png" href="https://toppng.com/uploads/preview/maintenance-service-11549817054h6szmandqm.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://toppng.com/uploads/preview/maintenance-service-11549817054h6szmandqm.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="container">
+      <header>
+        <div class="navbar">
+          <div class="title">
+            <div class="logo-img">
+              <img src="/images/logo.jpg" alt="Logo" />
+            </div>
+          </div>
 
-        <header>
-            <div class="navbar">
-                
-                <div class="title">
-                    <div class="logo-img"><img src="/images/logo.jpg" alt="Logo"></div>
-                </div>
+          <div class="pages">
+            <a href="#search_icons">Services</a>
+            <div><span id="user-email"></span></div>
+            <button class="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+              </svg>
+              Premium
+            </button>
+          </div>
+        </div>
 
-                <div class="pages">
-                    <a>Services</a>
-                    <a>Log in / Sign up</a>
-                    <button class="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
-                            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-                        </svg>
-                        Premium
-                    </button>
+        <div class="main">
+          <div class="heading">
+            <span class="gradient">Trusted Help </span
+            ><span class="gradient">Right When You Need It</span>
+          </div>
 
-                </div>
+          <div class="searchbar">
+            <input
+              type="text"
+              placeholder="What can we help you with at home today?"
+              id="searchfield"
+            />
+            <div class="magnifi">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+
+          <div class="search-icons" id="search_icons">
+            <div class="assembly service">
+              <div class="servic-icon">
+                <i class="fa-solid fa-screwdriver-wrench fa-beat"></i>
+              </div>
+              <div class="service-name">Assembly</div>
             </div>
 
-            <div class="main">
-
-                <div class="heading"><span class="gradient">Trusted Help </span><span class="gradient">Right When You Need It</span></div>
-
-                <div class="searchbar">
-                    <input type="text" placeholder="What can we help you with at home today?" id="searchfield">
-                    <div class="magnifi"><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
-                </div>                  
-
-                <div class="search-icons">
-                    
-                    <div class="assembly service">
-                        <div class="servic-icon"><i class="fa-solid fa-screwdriver-wrench fa-beat"></i></div>
-                        <div class="service-name">Assembly</div>
-                    </div>
-                    
-                    <div class="painting service">
-                        <div class="servic-icon"><i class="fa-solid fa-paint-roller fa-beat"></i></div>
-                        <div class="service-name">Painting</div>
-                    </div>
-                    
-                    <div class="moving service">
-                        <div class="servic-icon"><i class="fa-solid fa-truck-moving fa-beat"></i></div>
-                        <div class="service-name">Moving</div>
-                    </div>
-                    
-                    <div class="cleaning service">
-                        <div class="servic-icon"><i class="fa-solid fa-broom fa-beat"></i></div>
-                        <div class="service-name">Cleaning</div>
-                    </div>
-                    
-                    <div class="trending service">
-                        <div class="servic-icon"><i class="fa-solid fa-fire fa-beat"></i></div>
-                        <div class="service-name">Trending</div>
-                    </div>
-
-                </div>
-
-                <div class="ai-btn">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M19 2a1 1 0 0 1 .9.56l.35 1.03l1.03.35a1 1 0 0 1 0 1.89l-1.03.35l-.35 1.03a1 1 0 0 1-1.89 0l-.35-1.03l-1.03-.35a1 1 0 0 1 0-1.89l1.03-.35l.35-1.03A1 1 0 0 1 19 2" />
-                        <path fill="currentColor"
-                            d="M11 6.1l-.8 2.36a6 6 0 0 1-3.49 3.65l-2.36.8l2.36.8a6 6 0 0 1 3.65 3.49l.8 2.36l.8-2.36a6 6 0 0 1 3.49-3.65l2.36-.8l-2.36-.8a6 6 0 0 1-3.65-3.49z"/>
-                    </svg>
-                </div>
-
+            <div class="painting service">
+              <div class="servic-icon">
+                <i class="fa-solid fa-paint-roller fa-beat"></i>
+              </div>
+              <div class="service-name">Painting</div>
             </div>
 
-        </header>
-
-        <section>
-
-            <div class="projects">
-
-                <div class="organise hide">
-
-                    <div class="card">
-                        <div class="helps-i"><img src="/images/assembly.png" alt="Assembly"></div>
-                        <div class="helps-q">Furniture assembly</div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="helps-i"><img src="/images/assembly.png" alt="Assembly"></div>
-                        <div class="helps-q">Office furniture assembly</div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="helps-i"><img src="/images/assembly.png" alt="Assembly"></div>
-                        <div class="helps-q">Smart home device mounting</div>
-                    </div>
-                    
-                    <div class="card"> 
-                        <div class="helps-i"><img src="/images/assembly.png" alt="Assembly"></div>
-                        <div class="helps-q">Playground set installation</div>
-                    </div>
-                   
-                    <div class="card">
-                        <div class="helps-i"><img src="/images/assembly.png" alt="Assembly"></div>
-                        <div class="helps-q">Fitness equipment assembly</div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="helps-i"><img src="/images/assembly.png" alt="Assembly"></div>
-                        <div class="helps-q">Outdoor equipment assembly</div>
-                    </div>
-                    
-                </div>
-
-                <div class="organise ">
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/painting.png" alt="painting"></div>
-                    <div class="helps-q">Accent wall or decorative paint design</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/painting.png" alt="painting"></div>
-                    <div class="helps-q">Deck/fence staining or painting</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/painting.png" alt="painting"></div>
-                    <div class="helps-q">Cabinet refinishing or repainting</div>
-                    </div>
-                    
-                    <div class="card"> 
-                    <div class="helps-i"><img src="/images/painting.png" alt="painting"></div>
-                    <div class="helps-q">Touch-ups & repainting damaged surfaces</div>
-                    </div>
-                   
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/painting.png" alt="painting"></div>
-                    <div class="helps-q">Exterior wall/house painting</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/painting.png" alt="painting"></div>
-                    <div class="helps-q">Interior room painting</div>
-                    </div>
-                    
-                </div>
-
-                <div class="organise hide">
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/moving.png" alt="moving"></div>
-                    <div class="helps-q">Junk removal or donation drop-off</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/moving.png" alt="moving"></div>
-                    <div class="helps-q">Storage unit moving/organization</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/moving.png" alt="moving"></div>
-                    <div class="helps-q">Furniture rearranging within home</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/moving.png" alt="moving"></div>
-                    <div class="helps-q">Packing & unpacking support</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/moving.png" alt="moving"></div>
-                    <div class="helps-q">Small item pickup + delivery</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/moving.png" alt="moving"></div>
-                    <div class="helps-q">Full home moving assistance</div>
-                    </div>
-                    
-                </div>
-
-                <div class="organise hide">
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/cleaning.png" alt="cleaning"></div>
-                    <div class="helps-q">Post-renovation dust cleanup</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/cleaning.png" alt="cleaning"></div>
-                    <div class="helps-q">Window & glass cleaning</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/cleaning.png" alt="cleaning"></div>
-                    <div class="helps-q">Carpet & upholstery cleaning</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/cleaning.png" alt="cleaning"></div>
-                    <div class="helps-q">Move-in / Move-out cleaning</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/cleaning.png" alt="cleaning"></div>
-                    <div class="helps-q">Bathroom & kitchen intensive cleaning</div>
-                    </div>
-                    
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/cleaning.png" alt="cleaning"></div>
-                    <div class="helps-q">Full home deep cleaning</div>
-                    </div>
-                    
-                </div>
-
-                <div class="organise hide">
-                    <div class="card">
-                    <div class="helps-i"><img src="/images/trending.png" alt="trending"></div>
-                    <div class="helps-q">Home repairs</div>
-                    </div>
-                    
-                    <div class="card">                    
-                    <div class="helps-i"><img src="/images/trending.png" alt="trending"></div>
-                    <div class="helps-q">Pest control treatment</div>
-                    </div>
-
-                    <div class="card">                    
-                    <div class="helps-i"><img src="/images/trending.png" alt="trending"></div>
-                    <div class="helps-q">Garden care & balcony plant setup</div>
-                    </div>
-
-                    <div class="card">                    
-                    <div class="helps-i"><img src="/images/trending.png" alt="trending"></div>
-                    <div class="helps-q">Smart home setup</div>
-                    </div>
-
-                    <div class="card">                    
-                    <div class="helps-i"><img src="/images/trending.png" alt="trending"></div>
-                    <div class="helps-q">AC servicing & filter cleaning</div>
-                    </div>
-
-                    <div class="card hide">
-                    <div class="helps-i"><img src="/images/Secret.png" alt="Secret"></div>
-                    <div class="helps need">Secret Service</div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <div id="comments">
-
-                <div class="cus-heading">Discover The Experiences Of HomeBuddy Clients</div>
-
-                <div id="review-section">
-                    <div class="customer">
-                        
-                        
-                        <div class="i-cus">
-                            
-                            <div class="cus-img"><img src="/images/cus-1.png" alt="customer"></div>
-                            <div class="cus-name">Aarav Mehta</div>
-                            
-                        </div>
-
-                        <div class="review">I had an amazing experience! The service was professional from start to finish, and every detail was handled with real care. It’s rare to find such reliable and skilled help. I’ll definitely be booking again!</div>
-                    </div>
-                    <div class="customer">
-                        
-                        
-                        <div class="i-cus">
-                            
-                            <div class="cus-img"><img src="/images/cus-1.png" alt="customer"></div>
-                            <div class="cus-name">Priya Sharma</div>
-                            
-                        </div>
-
-                        <div class="review">Very impressed with the quality of work. They arrived on time, communicated clearly, and made sure I was comfortable with every step before proceeding. Overall, a great experience and excellent value for the service.</div>
-                    </div>
-                    <div class="customer">
-                        
-                        
-                        <div class="i-cus">
-                            
-                            <div class="cus-img"><img src="/images/cus-1.png" alt="customer"></div>
-                            <div class="cus-name">Rohan Iyer</div>
-                            
-                        </div>
-
-                        <div class="review">Great job and a truly stress-free process! They handled each and everything with professionalism and a friendly attitude. The end result was clean, organized, and exactly what I needed.</div>
-                    </div>
-                    <div class="customer">
-                        
-                        
-                        <div class="i-cus">
-                            
-                            <div class="cus-img"><img src="/images/cus-1.png" alt="customer"></div>
-                            <div class="cus-name">Kavita Deshmukh</div>
-                            
-                        </div>
-
-                        <div class="review">Exceptional service from start to finish. They worked quickly but with impressive precision, and it shows in the final outcome. Highly recommended for reliable work!</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="logo"><img src="/images/logo.jpg"></div>
-            
-            <div class="contact">
-
-                <div class="email">
-                    <input type="email" placeholder="your email">
-                </div>
-                
-                <div class="description">
-                    <input type="text" placeholder="Queries to Developers">
-                </div>
-
+            <div class="moving service">
+              <div class="servic-icon">
+                <i class="fa-solid fa-truck-moving fa-beat"></i>
+              </div>
+              <div class="service-name">Moving</div>
             </div>
 
-            <div class="copy-rights"><a>© Team Care.</a>&NonBreakingSpace; All Rights Reserved.</div>
-        </footer>
+            <div class="cleaning service">
+              <div class="servic-icon">
+                <i class="fa-solid fa-broom fa-beat"></i>
+              </div>
+              <div class="service-name">Cleaning</div>
+            </div>
 
+            <div class="trending service">
+              <div class="servic-icon">
+                <i class="fa-solid fa-fire fa-beat"></i>
+              </div>
+              <div class="service-name">Trending</div>
+            </div>
+          </div>
+
+          <div class="ai-btn">
+            <svg viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M19 2a1 1 0 0 1 .9.56l.35 1.03l1.03.35a1 1 0 0 1 0 1.89l-1.03.35l-.35 1.03a1 1 0 0 1-1.89 0l-.35-1.03l-1.03-.35a1 1 0 0 1 0-1.89l1.03-.35l.35-1.03A1 1 0 0 1 19 2"
+              />
+              <path
+                fill="currentColor"
+                d="M11 6.1l-.8 2.36a6 6 0 0 1-3.49 3.65l-2.36.8l2.36.8a6 6 0 0 1 3.65 3.49l.8 2.36l.8-2.36a6 6 0 0 1 3.49-3.65l2.36-.8l-2.36-.8a6 6 0 0 1-3.65-3.49z"
+              />
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="projects">
+          <div class="organise hide">
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/assembly.png" alt="Assembly" />
+              </div>
+              <div class="helps-q">Furniture assembly</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/assembly.png" alt="Assembly" />
+              </div>
+              <div class="helps-q">Office furniture assembly</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/assembly.png" alt="Assembly" />
+              </div>
+              <div class="helps-q">Smart home device mounting</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/assembly.png" alt="Assembly" />
+              </div>
+              <div class="helps-q">Playground set installation</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/assembly.png" alt="Assembly" />
+              </div>
+              <div class="helps-q">Fitness equipment assembly</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/assembly.png" alt="Assembly" />
+              </div>
+              <div class="helps-q">Outdoor equipment assembly</div>
+            </div>
+          </div>
+
+          <div class="organise">
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/painting.png" alt="painting" />
+              </div>
+              <div class="helps-q">Accent wall or decorative paint design</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/painting.png" alt="painting" />
+              </div>
+              <div class="helps-q">Deck/fence staining or painting</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/painting.png" alt="painting" />
+              </div>
+              <div class="helps-q">Cabinet refinishing or repainting</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/painting.png" alt="painting" />
+              </div>
+              <div class="helps-q">Touch-ups & repainting damaged surfaces</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/painting.png" alt="painting" />
+              </div>
+              <div class="helps-q">Exterior wall/house painting</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/painting.png" alt="painting" />
+              </div>
+              <div class="helps-q">Interior room painting</div>
+            </div>
+          </div>
+
+          <div class="organise hide">
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/moving.png" alt="moving" />
+              </div>
+              <div class="helps-q">Junk removal or donation drop-off</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/moving.png" alt="moving" />
+              </div>
+              <div class="helps-q">Storage unit moving/organization</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/moving.png" alt="moving" />
+              </div>
+              <div class="helps-q">Furniture rearranging within home</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/moving.png" alt="moving" />
+              </div>
+              <div class="helps-q">Packing & unpacking support</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/moving.png" alt="moving" />
+              </div>
+              <div class="helps-q">Small item pickup + delivery</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/moving.png" alt="moving" />
+              </div>
+              <div class="helps-q">Full home moving assistance</div>
+            </div>
+          </div>
+
+          <div class="organise hide">
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/cleaning.png" alt="cleaning" />
+              </div>
+              <div class="helps-q">Post-renovation dust cleanup</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/cleaning.png" alt="cleaning" />
+              </div>
+              <div class="helps-q">Window & glass cleaning</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/cleaning.png" alt="cleaning" />
+              </div>
+              <div class="helps-q">Carpet & upholstery cleaning</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/cleaning.png" alt="cleaning" />
+              </div>
+              <div class="helps-q">Move-in / Move-out cleaning</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/cleaning.png" alt="cleaning" />
+              </div>
+              <div class="helps-q">Bathroom & kitchen intensive cleaning</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/cleaning.png" alt="cleaning" />
+              </div>
+              <div class="helps-q">Full home deep cleaning</div>
+            </div>
+          </div>
+
+          <div class="organise hide">
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/trending.png" alt="trending" />
+              </div>
+              <div class="helps-q">Home repairs</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/trending.png" alt="trending" />
+              </div>
+              <div class="helps-q">Pest control treatment</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/trending.png" alt="trending" />
+              </div>
+              <div class="helps-q">Garden care & balcony plant setup</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/trending.png" alt="trending" />
+              </div>
+              <div class="helps-q">Smart home setup</div>
+            </div>
+
+            <div class="card">
+              <div class="helps-i">
+                <img src="/images/trending.png" alt="trending" />
+              </div>
+              <div class="helps-q">AC servicing & filter cleaning</div>
+            </div>
+
+            <div class="card hide">
+              <div class="helps-i">
+                <img src="/images/Secret.png" alt="Secret" />
+              </div>
+              <div class="helps need">Secret Service</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="comments">
+          <div class="cus-heading">
+            Discover The Experiences Of HomeBuddy Clients
+          </div>
+
+          <div id="review-section">
+            <div class="customer">
+              <div class="i-cus">
+                <div class="cus-img">
+                  <img src="/images/cus-1.png" alt="customer" />
+                </div>
+                <div class="cus-name">Aarav Mehta</div>
+              </div>
+
+              <div class="review">
+                I had an amazing experience! The service was professional from
+                start to finish, and every detail was handled with real care.
+                It’s rare to find such reliable and skilled help. I’ll
+                definitely be booking again!
+              </div>
+            </div>
+            <div class="customer">
+              <div class="i-cus">
+                <div class="cus-img">
+                  <img src="/images/cus-1.png" alt="customer" />
+                </div>
+                <div class="cus-name">Priya Sharma</div>
+              </div>
+
+              <div class="review">
+                Very impressed with the quality of work. They arrived on time,
+                communicated clearly, and made sure I was comfortable with every
+                step before proceeding. Overall, a great experience and
+                excellent value for the service.
+              </div>
+            </div>
+            <div class="customer">
+              <div class="i-cus">
+                <div class="cus-img">
+                  <img src="/images/cus-1.png" alt="customer" />
+                </div>
+                <div class="cus-name">Rohan Iyer</div>
+              </div>
+
+              <div class="review">
+                Great job and a truly stress-free process! They handled each and
+                everything with professionalism and a friendly attitude. The end
+                result was clean, organized, and exactly what I needed.
+              </div>
+            </div>
+            <div class="customer">
+              <div class="i-cus">
+                <div class="cus-img">
+                  <img src="/images/cus-1.png" alt="customer" />
+                </div>
+                <div class="cus-name">Kavita Deshmukh</div>
+              </div>
+
+              <div class="review">
+                Exceptional service from start to finish. They worked quickly
+                but with impressive precision, and it shows in the final
+                outcome. Highly recommended for reliable work!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="logo"><img src="/images/logo.jpg" /></div>
+
+        <div class="contact">
+          <div class="email">
+            <input type="email" placeholder="your email" />
+          </div>
+
+          <div class="description">
+            <input type="text" placeholder="Queries to Developers" />
+          </div>
+        </div>
+
+        <div class="copy-rights">
+          <a>© Team Care.</a>&NonBreakingSpace; All Rights Reserved.
+        </div>
+      </footer>
     </div>
-</body>
-<script src="/js/HomePage.js"></script>
+  </body>
+  <script src="/js/HomePage.js" type="module" async></script>
 </html>

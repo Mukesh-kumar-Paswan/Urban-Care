@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
-    <link rel="stylesheet" href="/css/PaymentPage.css">
+    <title>Chats</title>
+    <link rel="stylesheet" href="/css/ChatsPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,21 +12,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-        <div class="feedback-container">
-            <h1>Payment</h1>
-            
-            <div class="details">
-                
-            <ul class="question">
-                <li>chips</li>
-                <li>samosa</li>
-                <li>drink</li>
-            </ul>
+    <div id="container">
 
-            </div>
-            
-            <button class="submit-btn">PAY</button>
+        <div id="technician">
+            <div class="tech-img"><img src="logo.jpg" alt="technician"></div>
+            <div class="tech-name"><h6>Water Plumber</h6></div>
+            <button class="report">Report</button>
         </div>
+
+        <div id="chats">
+            <div class="msg">
+                <div class="chat">
+                    <div class="msg-img"><img src="logo.jpg" alt="technician"></div>
+                    <div class="query"><input type="text" placeholder="Type your message..."></div>
+                </div>    
+            </div>
+        </div>
+
+        <div id="type">
+            <span class="material-symbols-outlined">send</span>
+            <input type="text" placeholder="Type your message...">
+        </div>
+    </div>
 </body>
-<script src="/js/PaymentPage.js"></script>
+<script src="/js/ChatsPage.js"></script>
 </html>

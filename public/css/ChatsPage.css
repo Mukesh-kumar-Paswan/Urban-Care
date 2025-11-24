@@ -1,0 +1,130 @@
+/* ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #5da3d5;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* TECHNICIAN INFO */
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#technician {
+    height: 5rem;
+    width: 100%;
+    border-bottom: 2px solid #464343;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.tech-img {
+    padding: 0 1rem 0 10rem;
+}
+
+
+.tech-name {
+    font-size: 2rem;
+}
+
+.report {
+    height: 2.3rem;
+    width: 5rem;
+    margin: 0 0 0 56rem;
+    border-radius: 150px;
+    border: none;
+}
+
+.tech-img img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+/* CHATS WHERE MESSAGE'S ARE VISBLE */
+
+#chats {
+    height: 36rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.msg {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.msg-img img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.query input{
+    height: 2rem;
+    width: 40rem;
+    flex-wrap: wrap;
+    border-radius: 150px;
+}
+ 
+/* MESSAGE SENDING AND WRITTING SPACE */
+
+#type {
+    height: 5rem;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#type input {
+    height: 2.5rem;
+    width: 80rem;
+    border-radius: 150px;
+    background-color: #fff;
+    border: none;
+    color: black;
+    padding: 0 0 0 2rem;
+    font-size: 1.1rem;
+}
+
+input::placeholder {
+    color: #888;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+#type span {
+    position: relative;
+    left: 80rem;
+    color: #666666;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
