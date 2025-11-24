@@ -67,7 +67,6 @@ submitsignup.addEventListener("click", (event) => {
       const userData = {
         user: username,
         email: email,
-        password: password,
       };
 
       showMessage("Account Created", "signupmessage");
@@ -107,7 +106,7 @@ submitsignin.addEventListener("click", (event) => {
     })
     .catch((error) => {
       const errCode = error.code;
-      if (errorCode === "auth/invalid-credential") {
+      if (errCode === "auth/invalid-credential") {
         showMessage("Incorrect Email or Password", "signinmessage");
       } else {
         showMessage("Account does not Exist", "signinmessage");
